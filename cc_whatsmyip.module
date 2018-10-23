@@ -1,0 +1,7 @@
+<?php
+/**
+* @file
+* Module for logging and printing debug user info, such as remote IP.
+*/
+
+

@@ -1,0 +1,7 @@
+whatsmyip.content:
+  path: '/whatsmyip'
+  defaults:
+    _controller: '\Drupal\cc_whatsmyip\Controller\WhatsmyipController::content'
+    _title: 'whatsmyip'
+  requirements:
+    _permission: 'access content'

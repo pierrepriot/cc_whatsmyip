@@ -1,0 +1,26 @@
+<?php
+/**
+* @file
+* Module for logging and printing debug user info, such as remote IP.
+*/
+
+/**
+* Implementation of hook_install().
+*
+* basic logging and message output
+*/
+function cc_whatsmyip_install() {
+	\Drupal::logger('cc_whatsmyip')->notice('cc_whatsmyip: Install OK');  
+  drupal_set_message(t('cc_whatsmyip: Install OK'));
+}
+
+
+/**
+* Implementation of hook_uninstall().
+*
+* basic logging and message output
+*/
+function cc_whatsmyip_uninstall() {
+	\Drupal::logger('cc_whatsmyip')->notice('cc_whatsmyip: Uninstall OK');  
+  drupal_set_message(t('cc_whatsmyip: Uninstall OK'));
+}
